@@ -1,29 +1,24 @@
-Script started on 2026-03-16 19:09:52+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="94" LINES="35"]
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# [7mgit config --global user.name "Kristina Yurgina"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global user.name "Kristina Yurgina"
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# [7mgit config --global user.email "yurginapoet@gmail.com"[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global user.email "yurginapoet@gmail.com"
-[A
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# [7mgit config --global init.defaultBranch main[27m
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit config --global init.defaultBranch main
-[A
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# sa[Kp[K[Kapt update
-[?2004l[33m0% [Working][0m            Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
-[33m0% [Waiting for headers][0m[33m0% [Waiting for headers] [Waiting for headers][0m                                              Hit:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
-[33m                                              0% [Waiting for headers][0m[33m0% [Waiting for headers] [Waiting for headers][0m                                              Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
-[33m                                              0% [Waiting for headers][0m                        Hit:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
-[33m                        0% [Working][0m[33m0% [Working][0m[33m20% [Working][0m             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 36%Reading package lists... 36%Reading package lists... 50%Reading package lists... 50%Reading package lists... 50%Reading package lists... 50%Reading package lists... 51%Reading package lists... 51%Reading package lists... 55%Reading package lists... 55%Reading package lists... 58%Reading package lists... 58%Reading package lists... 65%Reading package lists... 65%Reading package lists... 71%Reading package lists... 71%Reading package lists... 75%Reading package lists... 75%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 77%Reading package lists... 81%Reading package lists... 81%Reading package lists... 83%Reading package lists... 83%Reading package lists... 90%Reading package lists... 90%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 0%Reading state information... Done
+root@eltex-practice2-pg2-v4:~# git config --global user.name "Kristina Yurgina"
+root@eltex-practice2-pg2-v4:~# git config --global user.email "yurginapoet@gmail.com"
+root@eltex-practice2-pg2-v4:~# git config --global init.defaultBranch main
+root@eltex-practice2-pg2-v4:~# apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
 89 packages can be upgraded. Run 'apt list --upgradable' to see them.
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# apt install gh git
-[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
-Reading state information... 0% Reading state information... 0%Reading state information... Done
+root@eltex-practice2-pg2-v4:~# apt install gh git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
 gh is already the newest version (2.45.0-1ubuntu0.3).
 git is already the newest version (1:2.43.0-1ubuntu7.3).
 0 upgraded, 0 newly installed, 0 to remove and 89 not upgraded.
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# [7mssh-keygen -t ed25519 -f[27mssh-keygen -t ed25519 -f ~/ss.[Kh.ssh[C[C[C/eltec[Kx-practice;[K2-pg2-v4
-[?2004lGenerating public/private ed25519 key pair.
+root@eltex-practice2-pg2-v4:~# ssh-keygen -t ed25519 -f ~/.ssh/eltex-practice2-pg2-v4
+Generating public/private ed25519 key pair.
 Enter passphrase (empty for no passphrase): 
 Enter same passphrase again: 
 Your identification has been saved in /root/.ssh/eltex-practice2-pg2-v4
@@ -42,210 +37,222 @@ The key's randomart image is:
 |              .+.|
 |               .E|
 +----[SHA256]-----+
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# gh auth login
-[?2004l7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mWhat account do you want to log into?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> GitHub.com[0m
-[0;39m  GitHub Enterprise Server[0m
-7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat account do you want to log into?[0m[0;36m GitHub.com[0m
-7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> HTTPS[0m
-[0;39m  SSH[0m
-7[1A[0G[1A[0G8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;39m  HTTPS[0m
-[0;1;36m> SSH[0m
-7[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mWhat is your preferred protocol for Git operations on this host?[0m[0;36m SSH[0m
-7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mUpload your SSH public key to your GitHub account?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> /root/.ssh/eltex-practice2-pg2-v4.pub[0m
-[0;39m  Skip[0m
-7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mUpload your SSH public key to your GitHub account?[0m[0;36m /root/.ssh/eltex-practice2-pg2-v4.pub[0m
-[0G[2K[0;1;92m? [0m[0;1;99mTitle for your SSH key: [0m[0;39m(GitHub CLI) [0m[?25l[?25l7[999;999f[6n8[?25h[6neltex-practice2-pg2-v4[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1B[0G[1A[?25h[0G[2K[0;1;92m? [0m[0;1;99mTitle for your SSH key: [0m[0;36meltex-practice2-pg2-v4[0m
-7[?25l8[0G[2K[0;1;92m? [0m[0;1;99mHow would you like to authenticate GitHub CLI?[0m  [0;36m[Use arrows to move, type to filter][0m
-[0;1;36m> Login with a web browser[0m
-[0;39m  Paste an authentication token[0m
-7[1A[0G[1A[0G8[?25h8[0G[2K[1A[0G[2K[1A[0G[2K[1A[0G[2K[0;1;92m? [0m[0;1;99mHow would you like to authenticate GitHub CLI?[0m[0;36m Login with a web browser[0m
+root@eltex-practice2-pg2-v4:~# gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account? /root/.ssh/eltex-practice2-pg2-v4.pub
+? Title for your SSH key: eltex-practice2-pg2-v4
+? How would you like to authenticate GitHub CLI? Login with a web browser
 
-[0;33m![0m First copy your one-time code: [0;1;39m4176-C0B1[0m
-[0;1;39mPress Enter[0m to open github.com in your browser... 
-[0;31m![0m Failed opening a web browser at https://github.com/login/device
+! First copy your one-time code: 4176-C0B1
+Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
   exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
   Please try entering the URL in your browser manually
-[0;32m✓[0m Authentication complete.
+✓ Authentication complete.
 - gh config set -h github.com git_protocol ssh
-[0;32m✓[0m Configured git protocol
-[0;33m![0m Authentication credentials saved in plain text
-[0;32m✓[0m Uploaded the SSH key to your GitHub account: [0;1;39m/root/.ssh/eltex-practice2-pg2-v4.pub[0m
-[0;32m✓[0m Logged in as [0;1;39myurginapoet[0m
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# gh auth setup-git --hostname github,[K.com
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# ghh[K auth status
-[?2004l[0;1;39mgithub.com[0m
-  [0;32m✓[0m Logged in to github.com account [0;1;39myurginapoet[0m (/root/.config/gh/hosts.yml)
-  - Active account: [0;1;39mtrue[0m
-  - Git operations protocol: [0;1;39mssh[0m
-  - Token: [0;1;39mgho_************************************[0m
-  - Token scopes: [0;1;39m'admin:public_key', 'gist', 'read:org', 'repo'[0m
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# gh repo creaate[K[K[Kte --public eltec[Kx-practice
-[?2004l[0;32m✓[0m Created repository yurginapoet/eltex-practice on GitHub
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ Uploaded the SSH key to your GitHub account: /root/.ssh/eltex-practice2-pg2-v4.pub
+✓ Logged in as yurginapoet
+root@eltex-practice2-pg2-v4:~# gh auth setup-git --hostname github.com
+root@eltex-practice2-pg2-v4:~# gh auth status
+github.com
+  ✓ Logged in to github.com account yurginapoet (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+root@eltex-practice2-pg2-v4:~# gh repo create --public eltex-practice
+✓ Created repository yurginapoet/eltex-practice on GitHub
   https://github.com/yurginapoet/eltex-practice
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# mkdir  [K~/eltex-practice && cd ~/eltex-pg2-v4_part[K[K[K[K[K[K[K[K[K[K[Kpractice
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# echo "#Le[K[KWEL=[K[K[K[KEltex course practice [K" > [K> README.md[C[C[C[C[C[C[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git init
-[?2004lInitialized empty Git repository in /root/eltex-practice/.git/
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git add .
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m ""F"i"r"s"t" "c"o"m"m"i"t"[C
-[?2004l[main (root-commit) 97b90ee] First commit
+root@eltex-practice2-pg2-v4:~# mkdir ~/eltex-practice && cd ~/eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice# echo "# Eltex course practice" >> README.md
+root@eltex-practice2-pg2-v4:~/eltex-practice# git init
+Initialized empty Git repository in /root/eltex-practice/.git/
+root@eltex-practice2-pg2-v4:~/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m "First commit"
+[main (root-commit) 97b90ee] First commit
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git bramn[K[Kncgh[K[Kh -M main
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git remio[K[Kote add origin mmai[K[K[Kain[K[K[K[K[7mhttps://github.com/yurgina[27m[7mp[27m[7moet/eltex-practice[27m[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/yurginapoet/eltex-practice
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git statiu[K[Kus
-[?2004lOn branch main
+root@eltex-practice2-pg2-v4:~/eltex-practice# git branch -M main
+root@eltex-practice2-pg2-v4:~/eltex-practice# git remote add origin https://github.com/yurginapoet/eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice# git status
+On branch main
 nothing to commit, working tree clean
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git push -u origin main
-[?2004lEnumerating objects: 3, done.
-Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
-Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+root@eltex-practice2-pg2-v4:~/eltex-practice# git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/yurginapoet/eltex-practice
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# mkdir -p module1/task1
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# mkdir -p module1/task1[C[1Pmodule1/task1[1Pmodule1/task1[1Pmodule1/task1[C[C[C[C[C[C[C[C[C[C[C[C[C[K2
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# mkdir module1/task2[K3
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# ls
-[?2004l[0m[01;34mmodule1[0m  README.md
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# cd ..
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# l;s[K[Ks
-[?2004leltex-pg2-v4_part3.log  [0m[01;34metc_backup_gzip[0m                   practice2_eltex-pg2-v4_part2.log
-eltex-pg2-v4_part.log   [01;31metc_backup.tar.bz2[0m                practice2_eltex-pg2-v4_part3.log
-[01;34meltex-practice[0m          [01;31metc_backup.tar.gz[0m                 report_part1.txt
-[01;34metc_backup[0m              p2p2.log                          [01;32muid.sh[0m
-[01;31metc_backup.7z[0m           pract1.pdf
-[01;34metc_backup_7zip[0m         practice2_eltex-pg2-v4_part1.log
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# cp p[Kpract1.pdf eltex-practice/module1/p[Ktask1
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# cp pract1.pdf eltex-practice/module1/task1[C[1P eltex-practice/module1/task1[1P eltex-practice/module1/task1[1P eltex-practice/module1/task1t eltex-practice/module1/task1x eltex-practice/module1/task1t eltex-practice/module1/task1[1P[1P[1P[1P[1P[1@r[1@e[1@p[1@o[1@r[1@t[1@_[1@p[1@a[1@r[1@t
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# cp report_part1.txt eltex-practice/module1/task1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K2[C[C[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2[1P eltex-practice/module1/task2e eltex-practice/module1/task2l eltex-practice/module1/task2t eltex-practice/module1/task2ex-p eltex-practice/module1/task2g eltex-practice/module1/task22-v4_part eltex-practice/module1/task2. eltex-practice/module1/task2l eltex-practice/module1/task2o eltex-practice/module1/task2g eltex-practice/module1/task2
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# cp eltex-pg2-v4_part.log eltex-practice/module1/task2[C[K3[1@3
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# git add .
-[?2004lfatal: not a git repository (or any of the parent directories): .git
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# cd eltex-p
-[?2004lbash: cd: eltex-p: No such file or directory
-[?2004h]0;root@eltex-practice2-pg2-v4: ~root@eltex-practice2-pg2-v4:~# cd eltex-practice/
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git add .
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git status
-[?2004lOn branch main
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir -p module1/task1
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir module1/task2
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir module1/task3
+root@eltex-practice2-pg2-v4:~/eltex-practice# ls
+module1  README.md
+root@eltex-practice2-pg2-v4:~/eltex-practice# cd ..
+root@eltex-practice2-pg2-v4:~# ls
+eltex-pg2-v4_part3.log  etc_backup_gzip                   practice2_eltex-pg2-v4_part2.log
+eltex-pg2-v4_part.log   etc_backup.tar.bz2                practice2_eltex-pg2-v4_part3.log
+eltex-practice          etc_backup.tar.gz                 report_part1.txt
+etc_backup              p2p2.log                          uid.sh
+etc_backup.7z           pract1.pdf
+etc_backup_7zip         practice2_eltex-pg2-v4_part1.log
+root@eltex-practice2-pg2-v4:~# cp pract1.pdf eltex-practice/module1/task1
+root@eltex-practice2-pg2-v4:~# cp report_part1.txt eltex-practice/module1/task1
+root@eltex-practice2-pg2-v4:~# cp eltex-pg2-v4_part.log eltex-practice/module1/task2
+root@eltex-practice2-pg2-v4:~# cp eltex-pg2-v4_part3.log eltex-practice/module1/task3
+root@eltex-practice2-pg2-v4:~# git add .
+fatal: not a git repository (or any of the parent directories): .git
+root@eltex-practice2-pg2-v4:~# cd eltex-p
+bash: cd: eltex-p: No such file or directory
+root@eltex-practice2-pg2-v4:~# cd eltex-practice/
+root@eltex-practice2-pg2-v4:~/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice# git status
+On branch main
 Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
-	[32mnew file:   module1/task1/pract1.pdf[m
-	[32mnew file:   module1/task1/report_part1.txt[m
-	[32mnew file:   module1/task2/eltex-pg2-v4_part.log[m
-	[32mnew file:   module1/task3/eltex-pg2-v4_part3.log[m
+	new file:   module1/task1/pract1.pdf
+	new file:   module1/task1/report_part1.txt
+	new file:   module1/task2/eltex-pg2-v4_part.log
+	new file:   module1/task3/eltex-pg2-v4_part3.log
 
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m ""A"d"d" "p"r"a"c"t"i"c"e" "#"1"[C
-[?2004l[main ca602bc] Add practice #1
+root@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m "Add practice #1"
+[main ca602bc] Add practice #1
  4 files changed, 109 insertions(+)
  create mode 100644 module1/task1/pract1.pdf
  create mode 100644 module1/task1/report_part1.txt
  create mode 100644 module1/task2/eltex-pg2-v4_part.log
  create mode 100644 module1/task3/eltex-pg2-v4_part3.log
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git push
-[?2004lEnumerating objects: 11, done.
-Counting objects:   9% (1/11)Counting objects:  18% (2/11)Counting objects:  27% (3/11)Counting objects:  36% (4/11)Counting objects:  45% (5/11)Counting objects:  54% (6/11)Counting objects:  63% (7/11)Counting objects:  72% (8/11)Counting objects:  81% (9/11)Counting objects:  90% (10/11)Counting objects: 100% (11/11)Counting objects: 100% (11/11), done.
+root@eltex-practice2-pg2-v4:~/eltex-practice# git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
 Delta compression using up to 2 threads
-Compressing objects:  11% (1/9)Compressing objects:  22% (2/9)Compressing objects:  33% (3/9)Compressing objects:  44% (4/9)Compressing objects:  55% (5/9)Compressing objects:  66% (6/9)Compressing objects:  77% (7/9)Compressing objects:  88% (8/9)Compressing objects: 100% (9/9)Compressing objects: 100% (9/9), done.
-Writing objects:  10% (1/10)Writing objects:  20% (2/10)Writing objects:  30% (3/10)Writing objects:  40% (4/10)Writing objects:  50% (5/10)Writing objects:  60% (6/10)Writing objects:  70% (7/10)Writing objects:  80% (8/10)Writing objects:  90% (9/10)Writing objects: 100% (10/10)Writing objects: 100% (10/10), 1.05 MiB | 34.78 MiB/s, done.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.05 MiB | 34.78 MiB/s, done.
 Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/yurginapoet/eltex-practice
    97b90ee..ca602bc  main -> main
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# mkdir ~/eltex-practice_clone && cd~/eltex_[K=-[K[K-practi ice_clone
-[?2004lbash: cd~/eltex-practiice_clone: No such file or directory
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# mkdir ~/eltex-practice_clone && cd~/eltex-practiice_clone[1Pce_clone
-[?2004lmkdir: cannot create directory ‘/root/eltex-practice_clone’: File exists
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# mkdir ~/eltex-practice_clone && cd~/eltex-practice_clone[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice[1P_clone[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice_[1Pclone[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice_c[1Plone[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice_cl[1Pone[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice_clo[1Pne[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice_clon[1Pe[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice_clone[K[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd~/eltex-practice_clone [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pd~/eltex-practice_clone
-[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone[1Pcd~/eltex-practice_clone
-[?2004lbash: mcd~/eltex-practice_clone: No such file or directory
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# mcd~/eltex-practice_clone ~/eltex-practice_clone[1P[1P[1@c
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_cloneroot@eltex-practice2-pg2-v4:~/eltex-practice_clone# git clone [7mhttps://github.com/yurginapoet/e[27m[7ml[27m[7mtex-practice[27m[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_cloneroot@eltex-practice2-pg2-v4:~/eltex-practice_clone# [C[C[C[C[C[C[C[C[C[Chttps://github.com/yurginapoet/eltex-practice
-[?2004lCloning into 'eltex-practice'...
-remote: Enumerating objects: 13, done.[K
-remote: Counting objects:   7% (1/13)[Kremote: Counting objects:  15% (2/13)[Kremote: Counting objects:  23% (3/13)[Kremote: Counting objects:  30% (4/13)[Kremote: Counting objects:  38% (5/13)[Kremote: Counting objects:  46% (6/13)[Kremote: Counting objects:  53% (7/13)[Kremote: Counting objects:  61% (8/13)[Kremote: Counting objects:  69% (9/13)[Kremote: Counting objects:  76% (10/13)[Kremote: Counting objects:  84% (11/13)[Kremote: Counting objects:  92% (12/13)[Kremote: Counting objects: 100% (13/13)[Kremote: Counting objects: 100% (13/13), done.[K
-remote: Compressing objects:  10% (1/10)[Kremote: Compressing objects:  20% (2/10)[Kremote: Compressing objects:  30% (3/10)[Kremote: Compressing objects:  40% (4/10)[Kremote: Compressing objects:  50% (5/10)[Kremote: Compressing objects:  60% (6/10)[Kremote: Compressing objects:  70% (7/10)[Kremote: Compressing objects:  80% (8/10)[Kremote: Compressing objects:  90% (9/10)[Kremote: Compressing objects: 100% (10/10)[Kremote: Compressing objects: 100% (10/10), done.[K
-Receiving objects:   7% (1/13)Receiving objects:  15% (2/13)Receiving objects:  23% (3/13)Receiving objects:  30% (4/13)Receiving objects:  38% (5/13)Receiving objects:  46% (6/13)remote: Total 13 (delta 0), reused 13 (delta 0), pack-reused 0 (from 0)[K
-Receiving objects:  53% (7/13), 844.00 KiB | 1.52 MiB/sReceiving objects:  61% (8/13), 844.00 KiB | 1.52 MiB/sReceiving objects:  69% (9/13), 844.00 KiB | 1.52 MiB/sReceiving objects:  76% (10/13), 844.00 KiB | 1.52 MiB/sReceiving objects:  84% (11/13), 844.00 KiB | 1.52 MiB/sReceiving objects:  92% (12/13), 844.00 KiB | 1.52 MiB/sReceiving objects: 100% (13/13), 844.00 KiB | 1.52 MiB/sReceiving objects: 100% (13/13), 1.05 MiB | 1.95 MiB/s, done.
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_cloneroot@eltex-practice2-pg2-v4:~/eltex-practice_clone# cd /~eltex/eltex[1P~/eltex[C[C[C[C[C[C[C-practice
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# echo >> README.md [C[C[C[C[1@"[1@"[1@ [C[1@([1@)[1@l[1@i[1@n[1@u[1@x[1@ [1@b[1@a[1@s[1@i[1@c[1@s[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git add .
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m "Add detail"
-[?2004l[main 67948f9] Add detail
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir ~/eltex-practice_clone && cd~/eltex-practiice_clone
+bash: cd~/eltex-practiice_clone: No such file or directory
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir ~/eltex-practice_clone && cd~/eltex-practice_clone
+mkdir: cannot create directory ‘/root/eltex-practice_clone’: File exists
+root@eltex-practice2-pg2-v4:~/eltex-practice# mcd~/eltex-practice_clone
+bash: mcd~/eltex-practice_clone: No such file or directory
+root@eltex-practice2-pg2-v4:~/eltex-practice# cd ~/eltex-practice_clone
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# git clone https://github.com/yurginapoet/eltex-practice
+Cloning into 'eltex-practice'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 13 (delta 0), reused 13 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (13/13), 1.05 MiB | 1.95 MiB/s, done.
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# cd ~/eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice# echo "(linux)" >> README.md 
+root@eltex-practice2-pg2-v4:~/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m "Add detail"
+[main 67948f9] Add detail
  1 file changed, 1 insertion(+)
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# git pushj[K
-[?2004lEnumerating objects: 5, done.
-Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+root@eltex-practice2-pg2-v4:~/eltex-practice# git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
 Delta compression using up to 2 threads
-Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
-Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/yurginapoet/eltex-practice
    ca602bc..67948f9  main -> main
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice# cd `/[K[K~/eltex-practice_clone/
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_cloneroot@eltex-practice2-pg2-v4:~/eltex-practice_clone# git fetch
-[?2004lfatal: not a git repository (or any of the parent directories): .git
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_cloneroot@eltex-practice2-pg2-v4:~/eltex-practice_clone# ls
-[?2004l[0m[01;34meltex-practice[0m
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_cloneroot@eltex-practice2-pg2-v4:~/eltex-practice_clone# cd eltex-practice/
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# cd eltex-practice/[Kgit fetch
-[?2004lremote: Enumerating objects: 5, done.[K
-remote: Counting objects:  20% (1/5)[Kremote: Counting objects:  40% (2/5)[Kremote: Counting objects:  60% (3/5)[Kremote: Counting objects:  80% (4/5)[Kremote: Counting objects: 100% (5/5)[Kremote: Counting objects: 100% (5/5), done.[K
-remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
-remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)[K
-Unpacking objects:  33% (1/3)Unpacking objects:  66% (2/3)Unpacking objects: 100% (3/3)Unpacking objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+root@eltex-practice2-pg2-v4:~/eltex-practice# cd ~/eltex-practice_clone/
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# git fetch
+fatal: not a git repository (or any of the parent directories): .git
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# ls
+eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# cd eltex-practice/
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
 From https://github.com/yurginapoet/eltex-practice
    ca602bc..67948f9  main       -> origin/main
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git log origin/main
-[?2004l[?1h=[33mcommit 67948f9b3a21620705d53c7edb637ef64b9d6d70[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Author: Kristina Yurgina <yurginapoet@gmail.com>[m
-Date:   Mon Mar 16 19:29:30 2026 +0000[m
-[m
-    Add detail[m
-[m
-[33mcommit ca602bc7493f423d5da650ef728c2fae7236cfdb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m[m
-Author: Kristina Yurgina <yurginapoet@gmail.com>[m
-Date:   Mon Mar 16 19:25:21 2026 +0000[m
-[m
-    Add practice #1[m
-[m
-[33mcommit 97b90eef634107d796c36e21d260f6200e6ed70d[m[m
-Author: Kristina Yurgina <yurginapoet@gmail.com>[m
-Date:   Mon Mar 16 19:19:27 2026 +0000[m
-[m
-    First commit[m
-[K[?1l>[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git diff main origin/main
-[?2004l[?1h=[1mdiff --git a/README.md b/README.md[m[m
-[1mindex 3f89773..9cb715e 100644[m[m
-[1m--- a/README.md[m[m
-[1m+++ b/README.md[m[m
-[36m@@ -1 +1,2 @@[m[m
- # Eltex course practice[m[m
-[32m+[m[32m(linux)[m[m
-[K[?1l>[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git merge
-[?2004lUpdating ca602bc..67948f9
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git log origin/main
+commit 67948f9b3a21620705d53c7edb637ef64b9d6d70 (origin/main, origin/HEAD)
+Author: Kristina Yurgina <yurginapoet@gmail.com>
+Date:   Mon Mar 16 19:29:30 2026 +0000
+
+    Add detail
+
+commit ca602bc7493f423d5da650ef728c2fae7236cfdb (HEAD -> main)
+Author: Kristina Yurgina <yurginapoet@gmail.com>
+Date:   Mon Mar 16 19:25:21 2026 +0000
+
+    Add practice #1
+
+commit 97b90eef634107d796c36e21d260f6200e6ed70d
+Author: Kristina Yurgina <yurginapoet@gmail.com>
+Date:   Mon Mar 16 19:19:27 2026 +0000
+
+    First commit
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git diff main origin/main
+diff --git a/README.md b/README.md
+index 3f89773..9cb715e 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+ # Eltex course practice
++(linux)
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git merge
+Updating ca602bc..67948f9
 Fast-forward
- README.md | 1 [32m+[m
+ README.md | 1 +
  1 file changed, 1 insertion(+)
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir -P [K[Kp model[K[Kule2/task1
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir -p module2/task1[C[C[C[C[C[K2[1P module2/task2[1P module2/task2
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir  module2/task2[K3
-[?2004l[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# ls `[K~
-[?2004leltex-pg2-v4_part3.log  [0m[01;34metc_backup_7zip[0m     practice2_eltex-pg2-v4_part1.log
-eltex-pg2-v4_part.log   [01;34metc_backup_gzip[0m     practice2_eltex-pg2-v4_part2.log
-[01;34meltex-practice[0m          [01;31metc_backup.tar.bz2[0m  practice2_eltex-pg2-v4_part3.log
-[01;34meltex-practice_clone[0m    [01;31metc_backup.tar.gz[0m   report_part1.txt
-[01;34metc_backup[0m              p2p2.log            [01;32muid.sh[0m
-[01;31metc_backup.7z[0m           pract1.pdf
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# cp [7mpractice2_eltex-pg2-v4_p[27m[7ma[27m[7mrt1.log[27m[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[Cpractice2_eltex-pg2-v4_part1.log [A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C practice2_eltex-pg2-v4_par[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C practice2_eltex-pg2-v4_part[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# c practice2_eltex-pg2-v4_par[1@t[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [Cp practice2_eltex-pg2-v4_pa[1@r[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C practice2_eltex-pg2-v4_p[1@a[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  practice2_eltex-pg2-v4_pa[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C  practice2_eltex-pg2-v4_par[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# m  practice2_eltex-pg2-v4_pa[1@r[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [Cv  practice2_eltex-pg2-v4_p[1@a[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[Cpractice2_eltex-pg2-v4_pa[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-[C[C[C[C[C[C[C[C[C[7m~/eltex-practice_clone/eltex-practice[27m[C[C[C[C[C[C[C[C[C~/eltex-practice_clone/eltex-practice/module2/ts[Kask1
-[?2004lmv: cannot stat 'practice2_eltex-pg2-v4_part1.log': No such file or directory
-[?2004h]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv practice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7m~/eltex-practice_clone/e[27m[7ml[27m[7mtex-practice[27mpractice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1[A[C[C[C[C[C[C[C[C[C[C[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C~/eltex-practice_clone/eltex-practicpractice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task[1P1[A[C[C[C[C[C[C[C[C[C[Cpractice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1[K[A[C[C[C[C[C[C[C[C[C[Cpractice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1 [K[A[C[C[C[C[C[C[C[C[C[C[1P
-[K[A[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpr[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpra[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprac[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpract[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpracti[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractic[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2_[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2_e[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2_el[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2_elt[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2_elte[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2_eltex[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[C[Cpractice2_eltex-[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[C[Cractice2_eltex-p[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[C[Cpractice2_eltex-pg[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[C[Cpractice2_eltex-pg2[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practice_clone/eltex-practiceroot@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# [C[C[C[C[C[C[C[C[Cpractice2_eltex-pg2-[1P[A]0;root@eltex-practice2-pg2-v4: ~/eltex-practi
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir -p module2/task1
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir  module2/task2
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir  module2/task3
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# ls ~
+eltex-pg2-v4_part3.log  etc_backup_7zip     practice2_eltex-pg2-v4_part1.log
+eltex-pg2-v4_part.log   etc_backup_gzip     practice2_eltex-pg2-v4_part2.log
+eltex-practice          etc_backup.tar.bz2  practice2_eltex-pg2-v4_part3.log
+eltex-practice_clone    etc_backup.tar.gz   report_part1.txt
+etc_backup              p2p2.log            uid.sh
+etc_backup.7z           pract1.pdf
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv practice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1
+mv: cannot stat 'practice2_eltex-pg2-v4_part1.log': No such file or directory
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv ~/practice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv ~/practice2_eltex-pg2-v4_part2.log ~/eltex-practice_clone/eltex-practice/module2/task2
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv ~/practice2_eltex-pg2-v4_part3.log ~/eltex-practice_clone/eltex-practice/module2/task3
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# ls module2/task1
+practice2_eltex-pg2-v4_part1.log
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   module2/task1/practice2_eltex-pg2-v4_part1.log
+	new file:   module2/task2/practice2_eltex-pg2-v4_part2.log
+	new file:   module2/task3/practice2_eltex-pg2-v4_part3.log
+
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git commit -m "Add practice #2"
+[main 6db225b] Add practice #2
+ 3 files changed, 8039 insertions(+)
+ create mode 100644 module2/task1/practice2_eltex-pg2-v4_part1.log
+ create mode 100644 module2/task2/practice2_eltex-pg2-v4_part2.log
+ create mode 100644 module2/task3/practice2_eltex-pg2-v4_part3.log
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 59.13 KiB | 11.83 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yurginapoet/eltex-practice
+   67948f9..6db225b  main -> main
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# exit
