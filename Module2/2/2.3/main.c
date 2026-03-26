@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "calc.h"
 
-#define MAX_NUMS 10
+#define MAX_NUMS 5
 #define BUF_SIZE 256
 
 int parse_input(double *arr) {

@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <math.h>
-// #include <stddef.h>
+#include <stddef.h>
 #include "calc.h"
 
 double add(int n, ...) {
@@ -165,7 +165,7 @@ Operation operations[] = {
     {6, "%",  "Modulo",                       calc_mod},
     {7, "min","Minimum",                      calc_min},
     {8, "max","Maximum",                      calc_max},
-    {9, "avg","Average",                      calc_avg}
+    // {9, "avg","Average",                      calc_avg}
 };
 
 int num_operations = sizeof(operations) / sizeof(operations[0]);

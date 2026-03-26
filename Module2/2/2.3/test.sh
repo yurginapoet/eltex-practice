@@ -109,7 +109,7 @@ run_test "Error: unknown operation" \
 run_test "Error: too many arguments (>5)" \
 "1
 1 2 3 4 5 6" \
-"too many arguments (maximum 5)"
+"Error: too many arguments (>5)"
 
 echo
 echo "=== Testing completed ==="
