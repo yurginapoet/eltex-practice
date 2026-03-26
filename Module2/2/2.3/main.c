@@ -30,7 +30,7 @@ int main() {
     double nums[MAX_NUMS];
 
     while (1) {
-        printf("\nAvailable operations (list generated dynamically):\n");
+        printf("\nAvailable operations:\n");
         for (int i = 0; i < num_operations; i++) 
             printf("%d: %s (%s)\n", operations[i].op, 
                    operations[i].symbol, operations[i].description);
@@ -74,7 +74,7 @@ int main() {
             continue;
         }
         if (n > 5) {
-            printf("Error: too many arguments (maximum 5)\n");
+            printf("Error: too many arguments (>5)\n");
             continue;
         }
 
