@@ -1,0 +1,258 @@
+root@eltex-practice2-pg2-v4:~# git config --global user.name "Kristina Yurgina"
+root@eltex-practice2-pg2-v4:~# git config --global user.email "yurginapoet@gmail.com"
+root@eltex-practice2-pg2-v4:~# git config --global init.defaultBranch main
+root@eltex-practice2-pg2-v4:~# apt update
+Hit:1 http://ru.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://ru.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:4 http://ru.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+89 packages can be upgraded. Run 'apt list --upgradable' to see them.
+root@eltex-practice2-pg2-v4:~# apt install gh git
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+gh is already the newest version (2.45.0-1ubuntu0.3).
+git is already the newest version (1:2.43.0-1ubuntu7.3).
+0 upgraded, 0 newly installed, 0 to remove and 89 not upgraded.
+root@eltex-practice2-pg2-v4:~# ssh-keygen -t ed25519 -f ~/.ssh/eltex-practice2-pg2-v4
+Generating public/private ed25519 key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/eltex-practice2-pg2-v4
+Your public key has been saved in /root/.ssh/eltex-practice2-pg2-v4.pub
+The key fingerprint is:
+SHA256:IvdF33NjSI/alYoMBgldIPkXQ1B0zV2txX+Mfa+9w/M root@eltex-practice2-pg2-v4
+The key's randomart image is:
++--[ED25519 256]--+
+|     oooB= .o ..+|
+|     .o..o.  o .+|
+|      .o  +  . *.|
+|       ..o ...* B|
+|    . o So. .oo*=|
+|     o o..o + +oo|
+|        .  + o.o |
+|              .+.|
+|               .E|
++----[SHA256]-----+
+root@eltex-practice2-pg2-v4:~# gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations on this host? SSH
+? Upload your SSH public key to your GitHub account? /root/.ssh/eltex-practice2-pg2-v4.pub
+? Title for your SSH key: eltex-practice2-pg2-v4
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 4176-C0B1
+Press Enter to open github.com in your browser... 
+! Failed opening a web browser at https://github.com/login/device
+  exec: "xdg-open,x-www-browser,www-browser,wslview": executable file not found in $PATH
+  Please try entering the URL in your browser manually
+✓ Authentication complete.
+- gh config set -h github.com git_protocol ssh
+✓ Configured git protocol
+! Authentication credentials saved in plain text
+✓ Uploaded the SSH key to your GitHub account: /root/.ssh/eltex-practice2-pg2-v4.pub
+✓ Logged in as yurginapoet
+root@eltex-practice2-pg2-v4:~# gh auth setup-git --hostname github.com
+root@eltex-practice2-pg2-v4:~# gh auth status
+github.com
+  ✓ Logged in to github.com account yurginapoet (/root/.config/gh/hosts.yml)
+  - Active account: true
+  - Git operations protocol: ssh
+  - Token: gho_************************************
+  - Token scopes: 'admin:public_key', 'gist', 'read:org', 'repo'
+root@eltex-practice2-pg2-v4:~# gh repo create --public eltex-practice
+✓ Created repository yurginapoet/eltex-practice on GitHub
+  https://github.com/yurginapoet/eltex-practice
+root@eltex-practice2-pg2-v4:~# mkdir ~/eltex-practice && cd ~/eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice# echo "# Eltex course practice" >> README.md
+root@eltex-practice2-pg2-v4:~/eltex-practice# git init
+Initialized empty Git repository in /root/eltex-practice/.git/
+root@eltex-practice2-pg2-v4:~/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m "First commit"
+[main (root-commit) 97b90ee] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@eltex-practice2-pg2-v4:~/eltex-practice# git branch -M main
+root@eltex-practice2-pg2-v4:~/eltex-practice# git remote add origin https://github.com/yurginapoet/eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice# git status
+On branch main
+nothing to commit, working tree clean
+root@eltex-practice2-pg2-v4:~/eltex-practice# git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yurginapoet/eltex-practice
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir -p module1/task1
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir module1/task2
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir module1/task3
+root@eltex-practice2-pg2-v4:~/eltex-practice# ls
+module1  README.md
+root@eltex-practice2-pg2-v4:~/eltex-practice# cd ..
+root@eltex-practice2-pg2-v4:~# ls
+eltex-pg2-v4_part3.log  etc_backup_gzip                   practice2_eltex-pg2-v4_part2.log
+eltex-pg2-v4_part.log   etc_backup.tar.bz2                practice2_eltex-pg2-v4_part3.log
+eltex-practice          etc_backup.tar.gz                 report_part1.txt
+etc_backup              p2p2.log                          uid.sh
+etc_backup.7z           pract1.pdf
+etc_backup_7zip         practice2_eltex-pg2-v4_part1.log
+root@eltex-practice2-pg2-v4:~# cp pract1.pdf eltex-practice/module1/task1
+root@eltex-practice2-pg2-v4:~# cp report_part1.txt eltex-practice/module1/task1
+root@eltex-practice2-pg2-v4:~# cp eltex-pg2-v4_part.log eltex-practice/module1/task2
+root@eltex-practice2-pg2-v4:~# cp eltex-pg2-v4_part3.log eltex-practice/module1/task3
+root@eltex-practice2-pg2-v4:~# git add .
+fatal: not a git repository (or any of the parent directories): .git
+root@eltex-practice2-pg2-v4:~# cd eltex-p
+bash: cd: eltex-p: No such file or directory
+root@eltex-practice2-pg2-v4:~# cd eltex-practice/
+root@eltex-practice2-pg2-v4:~/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   module1/task1/pract1.pdf
+	new file:   module1/task1/report_part1.txt
+	new file:   module1/task2/eltex-pg2-v4_part.log
+	new file:   module1/task3/eltex-pg2-v4_part3.log
+
+root@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m "Add practice #1"
+[main ca602bc] Add practice #1
+ 4 files changed, 109 insertions(+)
+ create mode 100644 module1/task1/pract1.pdf
+ create mode 100644 module1/task1/report_part1.txt
+ create mode 100644 module1/task2/eltex-pg2-v4_part.log
+ create mode 100644 module1/task3/eltex-pg2-v4_part3.log
+root@eltex-practice2-pg2-v4:~/eltex-practice# git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.05 MiB | 34.78 MiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yurginapoet/eltex-practice
+   97b90ee..ca602bc  main -> main
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir ~/eltex-practice_clone && cd~/eltex-practiice_clone
+bash: cd~/eltex-practiice_clone: No such file or directory
+root@eltex-practice2-pg2-v4:~/eltex-practice# mkdir ~/eltex-practice_clone && cd~/eltex-practice_clone
+mkdir: cannot create directory ‘/root/eltex-practice_clone’: File exists
+root@eltex-practice2-pg2-v4:~/eltex-practice# mcd~/eltex-practice_clone
+bash: mcd~/eltex-practice_clone: No such file or directory
+root@eltex-practice2-pg2-v4:~/eltex-practice# cd ~/eltex-practice_clone
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# git clone https://github.com/yurginapoet/eltex-practice
+Cloning into 'eltex-practice'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 13 (delta 0), reused 13 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (13/13), 1.05 MiB | 1.95 MiB/s, done.
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# cd ~/eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice# echo "(linux)" >> README.md 
+root@eltex-practice2-pg2-v4:~/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice# git commit -m "Add detail"
+[main 67948f9] Add detail
+ 1 file changed, 1 insertion(+)
+root@eltex-practice2-pg2-v4:~/eltex-practice# git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yurginapoet/eltex-practice
+   ca602bc..67948f9  main -> main
+root@eltex-practice2-pg2-v4:~/eltex-practice# cd ~/eltex-practice_clone/
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# git fetch
+fatal: not a git repository (or any of the parent directories): .git
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# ls
+eltex-practice
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone# cd eltex-practice/
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+From https://github.com/yurginapoet/eltex-practice
+   ca602bc..67948f9  main       -> origin/main
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git log origin/main
+commit 67948f9b3a21620705d53c7edb637ef64b9d6d70 (origin/main, origin/HEAD)
+Author: Kristina Yurgina <yurginapoet@gmail.com>
+Date:   Mon Mar 16 19:29:30 2026 +0000
+
+    Add detail
+
+commit ca602bc7493f423d5da650ef728c2fae7236cfdb (HEAD -> main)
+Author: Kristina Yurgina <yurginapoet@gmail.com>
+Date:   Mon Mar 16 19:25:21 2026 +0000
+
+    Add practice #1
+
+commit 97b90eef634107d796c36e21d260f6200e6ed70d
+Author: Kristina Yurgina <yurginapoet@gmail.com>
+Date:   Mon Mar 16 19:19:27 2026 +0000
+
+    First commit
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git diff main origin/main
+diff --git a/README.md b/README.md
+index 3f89773..9cb715e 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+ # Eltex course practice
++(linux)
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git merge
+Updating ca602bc..67948f9
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir -p module2/task1
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir  module2/task2
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mkdir  module2/task3
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# ls ~
+eltex-pg2-v4_part3.log  etc_backup_7zip     practice2_eltex-pg2-v4_part1.log
+eltex-pg2-v4_part.log   etc_backup_gzip     practice2_eltex-pg2-v4_part2.log
+eltex-practice          etc_backup.tar.bz2  practice2_eltex-pg2-v4_part3.log
+eltex-practice_clone    etc_backup.tar.gz   report_part1.txt
+etc_backup              p2p2.log            uid.sh
+etc_backup.7z           pract1.pdf
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv practice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1
+mv: cannot stat 'practice2_eltex-pg2-v4_part1.log': No such file or directory
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv ~/practice2_eltex-pg2-v4_part1.log ~/eltex-practice_clone/eltex-practice/module2/task1
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv ~/practice2_eltex-pg2-v4_part2.log ~/eltex-practice_clone/eltex-practice/module2/task2
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# mv ~/practice2_eltex-pg2-v4_part3.log ~/eltex-practice_clone/eltex-practice/module2/task3
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# ls module2/task1
+practice2_eltex-pg2-v4_part1.log
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git add .
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   module2/task1/practice2_eltex-pg2-v4_part1.log
+	new file:   module2/task2/practice2_eltex-pg2-v4_part2.log
+	new file:   module2/task3/practice2_eltex-pg2-v4_part3.log
+
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git commit -m "Add practice #2"
+[main 6db225b] Add practice #2
+ 3 files changed, 8039 insertions(+)
+ create mode 100644 module2/task1/practice2_eltex-pg2-v4_part1.log
+ create mode 100644 module2/task2/practice2_eltex-pg2-v4_part2.log
+ create mode 100644 module2/task3/practice2_eltex-pg2-v4_part3.log
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 59.13 KiB | 11.83 MiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yurginapoet/eltex-practice
+   67948f9..6db225b  main -> main
+root@eltex-practice2-pg2-v4:~/eltex-practice_clone/eltex-practice# exit

@@ -1,0 +1,75 @@
+eltex-pg2-v4@eltex-2026-spring:~$ ls                                                    
+ls           lsb_release  lsinitramfs  lslocks      lsmod        lspci
+lsattr       lscpu        lsipc        lslogins     lsns         lsusb
+lsblk        lsfd         lsirq        lsmem        lsof         
+eltex-pg2-v4@eltex-2026-spring:~$ $HIST
+$HISTCMD       $HISTCONTROL   $HISTFILE      $HISTFILESIZE  $HISTSIZE
+eltex-pg2-v4@eltex-2026-spring:~$ echo $HISTFILESIZE 
+2000
+eltex-pg2-v4@eltex-2026-spring:~$ ls -d .??*
+.bash_history  .bashrc	.lesshst  .profile
+.bash_logout   .config	.log	  .viminfo
+eltex-pg2-v4@eltex-2026-spring:~$ 
+eltex-pg2-v4@eltex-2026-spring:~$ export HISTTIMEFORMAT='%d.%m.%Y %T '
+eltex-pg2-v4@eltex-2026-spring:~$ history | tail -n 3
+   45  11.03.2026 21:59:17 ls -d .??*
+   46  11.03.2026 22:00:31 export HISTTIMEFORMAT='%d.%m.%Y %T '
+   47  11.03.2026 22:00:58 history | tail -n 3
+eltex-pg2-v4@eltex-2026-spring:~$ date
+Wed Mar 11 10:01:47 PM +07 2026
+eltex-pg2-v4@eltex-2026-spring:~$ history | tail -n 3
+   47  11.03.2026 22:00:58 history | tail -n 3
+   48  11.03.2026 22:01:47 date
+   49  11.03.2026 22:02:27 history | tail -n 3
+eltex-pg2-v4@eltex-2026-spring:~$ tail -n 5 ~/.bash_history
+cd ..
+ls
+logout
+screen -ls
+logout
+<o "export PROMPT_COMMAND='history -a'" >> ~/.bashrc
+eltex-pg2-v4@eltex-2026-spring:~$ source ~/.bashrc
+eltex-pg2-v4@eltex-2026-spring:~$ echo "test command"                                        
+test command
+eltex-pg2-v4@eltex-2026-spring:~$ history | tail -n 3
+   52  11.03.2026 22:08:34 source ~/.bashrc
+   53  11.03.2026 22:09:23 echo "test command"
+   54  11.03.2026 22:09:33 history | tail -n 3
+eltex-pg2-v4@eltex-2026-spring:~$ tail -n 3 ~/.bash_history
+echo "test command"
+#1773241773
+history | tail -n 3
+eltex-pg2-v4@eltex-2026-spring:~$ DATE=$(date +%Y-%m-%d) 
+eltex-pg2-v4@eltex-2026-spring:~$ echo $DATE
+2026-03-11
+eltex-pg2-v4@eltex-2026-spring:~$ TIME=$(date +%H:%M:%S) 
+eltex-pg2-v4@eltex-2026-spring:~$ echo $TIME
+22:11:58
+eltex-pg2-v4@eltex-2026-spring:~$ DATE_TIME="$DATE $TIME"
+eltex-pg2-v4@eltex-2026-spring:~$ echo $DATE_TIME
+2026-03-11 22:11:58
+eltex-pg2-v4@eltex-2026-spring:~$ find -L /bin /sbin -maxdepth 1 -type f -name '*[0-9]*' -printf '%f ' 2>&1 | grep -v "File system loop"; echo           
+ping4 pod2html python3.11 ssh-argv0 c99-gcc x86_64-linux-gnu-gcc-ar-12 base64 gcov-dump-12 x86_64-linux-gnu-gcc-ranlib-12 enc2xs x86_64-linux-gnu-gcc gcov-tool-12 x86_64-linux-gnu-gcov-12 pod2usage x86_64-linux-gnu-lto-dump x86_64 x86_64-linux-gnu-objdump addr2line sha224sum py3versions linux32 x86_64-linux-gnu-objcopy bzip2 pdb3 gcc-12 x86_64-linux-gnu-readelf x86_64-linux-gnu-gcov-dump x86_64-linux-gnu-ar grub-mkpasswd-pbkdf2 x86_64-linux-gnu-gcov-tool traceroute6.db md5sum bzip2recover grub-menulst2cfg x86_64-linux-gnu-cpp-12 x86_64-linux-gnu-size x86_64-linux-gnu-gprofng x86_64-linux-gnu-ld x86_64-linux-gnu-gprof h2xs x86_64-linux-gnu-gcc-ranlib x86_64-linux-gnu-ranlib x86_64-linux-gnu-ld.gold x86_64-linux-gnu-as x86_64-linux-gnu-gold pod2text pydoc3 x86_64-linux-gnu-nm x86_64-linux-gnu-elfedit x86_64-linux-gnu-strip x86_64-linux-gnu-gcc-nm-12 perl5.36.0 x86_64-linux-gnu-ld.bfd pydoc3.11 x86_64-linux-gnu-gcov-tool-12 b2sum c89 lto-dump-12 x86_64-linux-gnu-cpp x86_64-linux-gnu-lto-dump-12 pod2man sha1sum c89-gcc x86_64-linux-gnu-gcc-nm pl2pm ping6 h2ph x86_64-linux-gnu-c++filt x86_64-linux-gnu-gcc-ar sha512sum python3 x86_64-linux-gnu-gcc-12 gcc-ranlib-12 x86_64-linux-gnu-gp-display-src base32 pygettext3 x86_64-linux-gnu-gp-collect-app x86_64-linux-gnu-gcov cpan5.36-x86_64-linux-gnu md5sum.textutils x86_64-linux-gnu-gp-archive sha384sum py3clean x86_64-linux-gnu-gcov-dump-12 pdb3.11 perl5.36-x86_64-linux-gnu c99 x86_64-linux-gnu-strings linux64 x86_64-linux-gnu-gp-display-html pygettext3.11 systemd-id128 x86_64-linux-gnu-dwp gcov-12 i386 bunzip2 cpp-12 x86_64-linux-gnu-gp-display-text x86_64-linux-gnu-addr2line py3compile grub-syslinux2cfg traceroute6 diff3 gcc-nm-12 gcc-ar-12 sha256sum dumpe2fs e2fsck mkfs.ext3 e2freefrag e2undo e2scrub_all tune2fs e2image e2label e4defrag e2mmpstatus mke2fs mkfs.ext4 mkfs.ext2 e4crypt killall5 fsck.ext3 fsck.ext2 e2scrub resize2fs fsck.ext4 update-grub2 
+
+eltex-pg2-v4@eltex-2026-spring:~$ export PS1='\u@\h-$(date +%H:%M)> '                                                                           
+eltex-pg2-v4@eltex-2026-spring-22:38> bash
+eltex-pg2-v4@eltex-2026-spring:~$ echo 'export PS1='\''\u@\h-$(date +%H:%M)> '\' >> ~/.bashrc
+eltex-pg2-v4@eltex-2026-spring:~$ source ~/.bashrc
+eltex-pg2-v4@eltex-2026-spring-22:44> bash
+eltex-pg2-v4@eltex-2026-spring-22:44> mkdir -p ~/$(date +%Y)-{01..12}                   
+eltex-pg2-v4@eltex-2026-spring-22:48> ls | grep "$(date +%Y)"
+2026-01
+2026-02
+2026-03
+2026-04
+2026-05
+2026-06
+2026-07
+2026-08
+2026-09
+2026-10
+2026-11
+2026-12
+eltex-pg2-v4@eltex-2026-spring-22:49> exit
+exit
+eltex-pg2-v4@eltex-2026-spring-22:53> 
