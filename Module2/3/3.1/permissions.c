@@ -22,14 +22,14 @@ static int parse_symbolic(const char *s, mode_t *mode)
 
 void print_permissions(mode_t mode)
 {
-    printf("Буквенное представление: ");
+    printf("Symbolic representation: ");
     printf("%c%c%c", (mode & S_IRUSR) ? 'r' : '-', (mode & S_IWUSR) ? 'w' : '-', (mode & S_IXUSR) ? 'x' : '-');
     printf("%c%c%c", (mode & S_IRGRP) ? 'r' : '-', (mode & S_IWGRP) ? 'w' : '-', (mode & S_IXGRP) ? 'x' : '-');
     printf("%c%c%c\n", (mode & S_IROTH) ? 'r' : '-', (mode & S_IWOTH) ? 'w' : '-', (mode & S_IXOTH) ? 'x' : '-');
 
-    printf("Цифровое представление: %03o\n", mode);
+    printf("Numeric representation: %03o\n", mode);
 
-    printf("Битовое представление: ");
+    printf("Bit representation: ");
     for (int i = 8; i >= 0; i--) {
         printf("%d", (mode & (1U << i)) ? 1 : 0);
     }
@@ -54,7 +54,7 @@ int parse_permissions(const char *input, mode_t *mode)
 void apply_chmod_command(mode_t *mode, const char *cmd)
 {
     if (strlen(cmd) < 3) {
-        printf("Ошибка: слишком короткая команда!\n");
+        printf("Error: command too short!\n");
         return;
     }
     char who = cmd[0];
@@ -62,7 +62,7 @@ void apply_chmod_command(mode_t *mode, const char *cmd)
     const char *perm_str = &cmd[2];
 
     if (strchr("ugoa", who) == NULL || strchr("+-=", op) == NULL) {
-        printf("Ошибка: формат команды должен быть who op perms (u/g/o/a, +/-/=, r/w/x)\n");
+        printf("Error: command format must be who op perms (u/g/o/a, +/-/=, r/w/x)\n");
         return;
     }
 

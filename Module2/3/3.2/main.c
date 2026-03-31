@@ -53,7 +53,6 @@ int main(int argc, char *argv[])
         }
     }
 
-    printf("\n=== Statistics ===\n");
     printf("Packets destined for nodes in own subnet: %d (%.2f%%)\n",
            own_count, N > 0 ? (double)own_count / N * 100.0 : 0.0);
 
